@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6F6F6"
     tools:context=".MainActivity">
 
     <Button
@@ -15,7 +14,8 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
         android:backgroundTint="#FFFFFF"
-        android:drawableLeft="@drawable/gps_resize"
+        android:drawableStart="@drawable/gps_resize"
+        android:elevation="20dp"
         android:fontFamily="@font/godom"
         android:gravity="center"
         android:text="@string/place_name_test"
@@ -31,15 +31,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/button_pattern_home"
-        android:drawableLeft="@drawable/ring_resize"
+        android:drawableStart="@drawable/ring_resize"
         android:fontFamily="@font/godom"
-        android:paddingTop="30dp"
-        android:paddingBottom="30dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
         android:text="알림 센터"
-        android:textColor="#000000"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tv_place_name" />
@@ -49,13 +48,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/button_pattern_home"
-        android:drawableLeft="@drawable/cctv_resize"
+        android:drawableStart="@drawable/cctv_resize"
         android:fontFamily="@font/godom"
-        android:paddingTop="30dp"
-        android:paddingBottom="30dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
         android:text="CCTV 확인"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -70,7 +69,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/button_pattern_home"
-        android:drawableLeft="@drawable/gallery_resize"
+        android:drawableStart="@drawable/gallery_resize"
         android:fontFamily="@font/godom"
         android:paddingTop="40dp"
         android:paddingBottom="40dp"
@@ -88,7 +87,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/button_pattern_home"
-        android:drawableLeft="@drawable/facility_resize"
+        android:drawableStart="@drawable/facility_resize"
         android:fontFamily="@font/godom"
         android:paddingTop="40dp"
         android:paddingBottom="40dp"
@@ -97,6 +96,18 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/bt_home_gallery"
         tools:layout_editor_absoluteX="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Ding Dong Dang"
+        android:fontFamily="@font/godom"
+        android:textColor="#ACACAC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/bt_home_facility" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
