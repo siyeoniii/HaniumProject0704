@@ -4,12 +4,29 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <Button
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/orange"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:drawablePadding="13dp"
+        android:text="지난 사진/영상"
+        android:fontFamily="@font/godom"
+        android:background="@color/orange"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageButton
         android:id="@+id/button_return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Home"
-        tools:ignore="MissingConstraints" />
+        android:background="@android:color/transparent"
+        android:gravity="left"
+        android:src="@drawable/arrow_orange_resize"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

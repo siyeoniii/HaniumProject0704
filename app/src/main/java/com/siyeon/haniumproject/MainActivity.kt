@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        var buttonCctvActivity = findViewById<Button>(R.id.bt_home_cctv)
-        buttonCctvActivity.setOnClickListener {
-            var intent = Intent(applicationContext, CctvActivity::class.java)
+        var buttonCCTVActivity = findViewById<Button>(R.id.bt_home_cctv)
+        buttonCCTVActivity.setOnClickListener {
+            var intent = Intent(applicationContext, CCTVActivity::class.java)
             startActivity(intent)
         }
 

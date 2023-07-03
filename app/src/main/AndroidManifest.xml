@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,7 +12,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HaniumProject">
+        android:theme="@style/Theme.HaniumProject"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -25,14 +28,18 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-        <activity android:name=".AlarmActivity"
-            android:label="알림 센터"/>
-        <activity android:name=".CctvActivity"
-            android:label="실시간 CCTV"/>
-        <activity android:name=".GalleryActivity"
-            android:label="저장된 사진/동영상"/>
-        <activity android:name=".FacilityActivity"
-            android:label="시설물 현황"/>
+        <activity
+            android:name=".AlarmActivity"
+            android:label="알림 센터" />
+        <activity
+            android:name=".CctvActivity"
+            android:label="실시간 CCTV" />
+        <activity
+            android:name=".GalleryActivity"
+            android:label="저장된 사진/동영상" />
+        <activity
+            android:name=".FacilityActivity"
+            android:label="시설물 현황" />
     </application>
 
 </manifest>
