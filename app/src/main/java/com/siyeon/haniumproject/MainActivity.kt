@@ -3,16 +3,22 @@ package com.siyeon.haniumproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.webkit.WebView
+import android.view.View
 import android.widget.Button
-import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.startActivity
+import androidx.coordinatorlayout.widget.CoordinatorLayout
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val button = findViewById<Button>(R.id.bt_place_name)
+        button.setOnClickListener {
+            val bottomSheet = BottomSheetDialog(this)
+            bottomSheet.show(supportFragmentManager, bottomSheet.tag)
+        }
 
 
         var buttonAlarmActivity = findViewById<Button>(R.id.bt_home_alarm)
@@ -39,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 
 
 }

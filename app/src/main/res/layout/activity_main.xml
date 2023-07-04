@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/tv_place_name"
+        android:id="@+id/bt_place_name"
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@color/orange"
@@ -19,6 +19,8 @@
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:paddingLeft="12dp"
+        android:paddingRight="15dp"
         android:drawablePadding="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +41,7 @@
         android:text="알림 센터"
         android:textSize="35sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/tv_place_name" />
+        app:layout_constraintTop_toBottomOf="@id/bt_place_name" />
 
     <Button
         android:id="@+id/bt_home_cctv"
