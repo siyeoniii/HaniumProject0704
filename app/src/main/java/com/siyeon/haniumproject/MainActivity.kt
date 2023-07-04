@@ -3,6 +3,7 @@ package com.siyeon.haniumproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.webkit.WebView
 import android.widget.Button
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         var buttonAlarmActivity = findViewById<Button>(R.id.bt_home_alarm)
         buttonAlarmActivity.setOnClickListener {
             var intent = Intent(applicationContext, AlarmActivity::class.java)
@@ -20,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         var buttonCCTVActivity = findViewById<Button>(R.id.bt_home_cctv)
         buttonCCTVActivity.setOnClickListener {
-            var intent = Intent(applicationContext, CCTVActivity::class.java)
+            var intent = Intent(applicationContext, CctvActivity::class.java)
             startActivity(intent)
         }
 
