@@ -1,15 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/bt_seoul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서울특별시"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_busan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="부산광역시"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_daegu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="대구광역시"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_incheon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인천광역시"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_gwangju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="광주광역시"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_daejeon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="대전광역시"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_ulsan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="울산광역시"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_sejong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="세종특별자치시"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_gyeonggido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="경기도"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_gangwondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="강원도"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_chungcheongdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="충청도"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_jeollado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전라도"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_gyeongsangdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="경상도"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_jejodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제주도"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

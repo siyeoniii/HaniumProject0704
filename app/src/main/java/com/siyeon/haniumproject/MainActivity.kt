@@ -16,10 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.bt_place_name)
         button.setOnClickListener {
-            val bottomSheet = BottomSheetDialog(this)
+            val bottomSheet = BottomSheetDialog()
             bottomSheet.show(supportFragmentManager, bottomSheet.tag)
         }
-
 
         var buttonAlarmActivity = findViewById<Button>(R.id.bt_home_alarm)
         buttonAlarmActivity.setOnClickListener {
@@ -45,8 +44,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
-
 
 }
 
