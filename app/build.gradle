@@ -2,9 +2,12 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
+
 }
 
 android {
+
     namespace 'com.siyeon.haniumproject'
     compileSdk 33
 
@@ -31,6 +34,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    //login4에서 추가. kotlin-android-extensions 대체
+    viewBinding {
+        enabled = true
+    }
+
+
 }
 
 dependencies {
