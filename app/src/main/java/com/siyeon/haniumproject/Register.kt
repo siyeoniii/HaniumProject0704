@@ -21,22 +21,22 @@ class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater) // View Binding 초기화
-        setContentView(R.layout.activity_register)
+        setContentView(binding.root) // View Binding의 root 뷰를 설정
 
-        binding.btnRegister.setOnClickListener { //이름 겹침
+        binding.registerRegister.setOnClickListener {
             Log.d(TAG, "회원가입 버튼 클릭")
 
             // editText로부터 유저가 입력한 값들을 받아온다
-            val id = binding.editId.text.toString() //이름 겹침
-            val pw = binding.editPw.text.toString() //이름 겹침
-            val pwRe = binding.editPwRe.text.toString()
+            val registerid = binding.registerId.text.toString()
+            val registerpw = binding.registerPw.text.toString()
+            val pwRe = binding.registerPwRe.text.toString()
 
             // 유저가 항목을 다 채우지 않았을 경우
-            if(id.isEmpty() || pw.isEmpty() || pwRe.isEmpty()){
+            if(registerid.isEmpty() || registerpw.isEmpty() || pwRe.isEmpty()){
                 isExistBlank = true
             }
             else{
-                if(pw == pwRe){
+                if(registerpw == pwRe){
                     isPWSame = true
                 }
             }
@@ -46,8 +46,8 @@ class Register : AppCompatActivity() {
                 // 유저가 입력한 id, pw를 쉐어드에 저장한다.
                 val sharedPreference = getSharedPreferences("file name", Context.MODE_PRIVATE)
                 val editor = sharedPreference.edit()
-                editor.putString("id", id)
-                editor.putString("pw", pw)
+                editor.putString("id", registerid)
+                editor.putString("pw", registerpw)
                 editor.apply()
 
                 // 회원가입 성공 토스트 메세지 띄우기

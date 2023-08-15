@@ -21,11 +21,11 @@ class LoginActivity : AppCompatActivity() {
 
 
         // 로그인 버튼
-        binding.btnLogin.setOnClickListener {
+        binding.loginLogin.setOnClickListener {
 
             //editText로부터 입력된 값을 받아온다
-            var id = binding.editId.text.toString() //이름 겹침
-            var pw = binding.editPw.text.toString()
+            var id = binding.loginId.text.toString() //이름 겹침
+            var pw = binding.loginPw.text.toString()
 
             // 쉐어드로부터 저장된 id, pw 가져오기
             val sharedPreference = getSharedPreferences("file name", MODE_PRIVATE)
@@ -36,6 +36,11 @@ class LoginActivity : AppCompatActivity() {
             if(id == savedId && pw == savedPw){
                 // 로그인 성공 다이얼로그 보여주기
                 dialog("success")
+
+                /// MainActivity로 이동
+                val mainIntent = Intent(this, MainActivity::class.java)
+                startActivity(mainIntent)
+
             }
             else{
                 // 로그인 실패 다이얼로그 보여주기
@@ -45,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
 
         // 회원가입 버튼
         // 클릭 시 Resgister 액티비티로 이동
-        binding.btnRegister.setOnClickListener { //이름 겹침
+        binding.loginRegister.setOnClickListener { //이름 겹침
             val intent = Intent(this, Register::class.java)
             startActivity(intent)
         }

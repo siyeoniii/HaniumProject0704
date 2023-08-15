@@ -45,10 +45,10 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="로그인"/>
+            android:label="로그인" />
         <activity
             android:name=".Register"
-            android:label="회원가입"/>
+            android:label="회원가입" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
